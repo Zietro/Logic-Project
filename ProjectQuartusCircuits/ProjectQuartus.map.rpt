@@ -1,0 +1,273 @@
+Analysis & Synthesis report for ProjectQuartus
+Sun May 11 21:04:51 2025
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sun May 11 21:04:51 2025        ;
+; Quartus II Version          ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name               ; ProjectQuartus                               ;
+; Top-level Entity Name       ; ProjectQuartus                               ;
+; Family                      ; Cyclone                                      ;
+; Total logic elements        ; 27                                           ;
+; Total pins                  ; 13                                           ;
+; Total virtual pins          ; 0                                            ;
+; Total memory bits           ; 0                                            ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; ProjectQuartus     ; ProjectQuartus     ;
+; Family name                                                                ; Cyclone            ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 12     ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                  ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                  ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+
+; ProjectQuartus.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/OneDrive/Desktop/LogicDesignProjectNew/ProjectQuartus.bdf       ;
+; SwitchChangeDetector.bdf         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/OneDrive/Desktop/LogicDesignProjectNew/SwitchChangeDetector.bdf ;
+; 81MUXPZ.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/OneDrive/Desktop/LogicDesignProjectNew/81MUXPZ.bdf              ;
+; LEDOutput.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/OneDrive/Desktop/LogicDesignProjectNew/LEDOutput.bdf            ;
+; NextStates.bdf                   ; yes             ; User Block Diagram/Schematic File  ; C:/Users/User/OneDrive/Desktop/LogicDesignProjectNew/NextStates.bdf           ;
+; 21mux.bdf                        ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/others/maxplus2/21mux.bdf                         ;
+; 74153.bdf                        ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/others/maxplus2/74153.bdf                         ;
+; 7474.bdf                         ; yes             ; Megafunction                       ; d:/altera/quartus/libraries/others/maxplus2/7474.bdf                          ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Total logic elements                        ; 27          ;
+;     -- Combinational with no register       ; 24          ;
+;     -- Register only                        ; 0           ;
+;     -- Combinational with a register        ; 3           ;
+;                                             ;             ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 20          ;
+;     -- 3 input functions                    ; 6           ;
+;     -- 2 input functions                    ; 1           ;
+;     -- 1 input functions                    ; 0           ;
+;     -- 0 input functions                    ; 0           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 27          ;
+;     -- arithmetic mode                      ; 0           ;
+;     -- qfbk mode                            ; 0           ;
+;     -- register cascade mode                ; 0           ;
+;     -- synchronous clear/load mode          ; 1           ;
+;     -- asynchronous clear/load mode         ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 3           ;
+; I/O pins                                    ; 13          ;
+; Maximum fan-out node                        ; 7474:inst|9 ;
+; Maximum fan-out                             ; 16          ;
+; Total fan-out                               ; 112         ;
+; Average fan-out                             ; 2.80        ;
++---------------------------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                            ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                          ; Library Name ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------+--------------+
+; |ProjectQuartus            ; 27 (0)      ; 3            ; 0           ; 13   ; 0            ; 24 (0)       ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus                                              ; work         ;
+;    |7474:inst4|            ; 1 (1)       ; 1            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|7474:inst4                                   ; work         ;
+;    |7474:inst|             ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|7474:inst                                    ; work         ;
+;    |LEDOutput:inst3|       ; 11 (0)      ; 0            ; 0           ; 0    ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3                              ;              ;
+;       |81MUXPZ:inst1|      ; 3 (0)       ; 0            ; 0           ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst1                ; work         ;
+;          |21mux:inst17|    ; 3 (3)       ; 0            ; 0           ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst1|21mux:inst17   ; work         ;
+;       |81MUXPZ:inst2|      ; 3 (0)       ; 0            ; 0           ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst2                ; work         ;
+;          |21mux:inst17|    ; 3 (3)       ; 0            ; 0           ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst2|21mux:inst17   ; work         ;
+;       |81MUXPZ:inst3|      ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst3                ; work         ;
+;          |21mux:inst17|    ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst3|21mux:inst17   ; work         ;
+;       |81MUXPZ:inst4|      ; 3 (0)       ; 0            ; 0           ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst4                ; work         ;
+;          |21mux:inst17|    ; 3 (3)       ; 0            ; 0           ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst4|21mux:inst17   ; work         ;
+;    |NextStates:inst6|      ; 13 (2)      ; 0            ; 0           ; 0    ; 0            ; 13 (2)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|NextStates:inst6                             ; work         ;
+;       |81MUXPZ:inst14|     ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|NextStates:inst6|81MUXPZ:inst14              ; work         ;
+;          |21mux:inst17|    ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|NextStates:inst6|81MUXPZ:inst14|21mux:inst17 ; work         ;
+;       |81MUXPZ:inst1|      ; 7 (0)       ; 0            ; 0           ; 0    ; 0            ; 7 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|NextStates:inst6|81MUXPZ:inst1               ; work         ;
+;          |21mux:inst17|    ; 7 (7)       ; 0            ; 0           ; 0    ; 0            ; 7 (7)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |ProjectQuartus|NextStates:inst6|81MUXPZ:inst1|21mux:inst17  ; work         ;
++----------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 3     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 1     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sun May 11 21:04:51 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ProjectQuartus -c ProjectQuartus
+Info: Found 1 design units, including 1 entities, in source file projectquartus.bdf
+    Info: Found entity 1: ProjectQuartus
+Info: Found 1 design units, including 1 entities, in source file switchchangedetector.bdf
+    Info: Found entity 1: SwitchChangeDetector
+Info: Found 1 design units, including 1 entities, in source file 81muxpz.bdf
+    Info: Found entity 1: 81MUXPZ
+Info: Found 1 design units, including 1 entities, in source file ledoutput.bdf
+    Info: Found entity 1: LEDOutput
+Info: Found 1 design units, including 1 entities, in source file nextstates.bdf
+    Info: Found entity 1: NextStates
+Info: Elaborating entity "ProjectQuartus" for the top level hierarchy
+Info: Elaborating entity "LEDOutput" for hierarchy "LEDOutput:inst3"
+Info: Elaborating entity "81MUXPZ" for hierarchy "LEDOutput:inst3|81MUXPZ:inst1"
+Info: Elaborating entity "21mux" for hierarchy "LEDOutput:inst3|81MUXPZ:inst1|21mux:inst17"
+Info: Elaborated megafunction instantiation "LEDOutput:inst3|81MUXPZ:inst1|21mux:inst17"
+Info: Elaborating entity "74153" for hierarchy "LEDOutput:inst3|81MUXPZ:inst1|74153:inst"
+Info: Elaborated megafunction instantiation "LEDOutput:inst3|81MUXPZ:inst1|74153:inst"
+Info: Elaborating entity "7474" for hierarchy "7474:inst"
+Info: Elaborated megafunction instantiation "7474:inst"
+Info: Elaborating entity "NextStates" for hierarchy "NextStates:inst6"
+Warning: Block or symbol "OR2" of instance "inst24" overlaps another block or symbol
+Info: Elaborating entity "SwitchChangeDetector" for hierarchy "SwitchChangeDetector:inst2"
+Info: Implemented 40 device resources after synthesis - the final resource count might be different
+    Info: Implemented 6 input pins
+    Info: Implemented 7 output pins
+    Info: Implemented 27 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 219 megabytes
+    Info: Processing ended: Sun May 11 21:04:51 2025
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

@@ -1,0 +1,437 @@
+|ProjectQuartus
+LED1 <= LEDOutput:inst3.LED1
+Switch1 => LEDOutput:inst3.Switch1
+Switch1 => NextStates:inst6.I1
+Switch1 => SwitchChangeDetector:inst2.Switch1
+Switch2 => LEDOutput:inst3.Switch2
+Switch2 => NextStates:inst6.I2
+Switch2 => SwitchChangeDetector:inst2.Switch2
+Switch3 => LEDOutput:inst3.Switch3
+Switch3 => NextStates:inst6.I3
+Switch3 => SwitchChangeDetector:inst2.Switch3
+Switch4 => LEDOutput:inst3.Switch4
+Switch4 => NextStates:inst6.I4
+Switch4 => SwitchChangeDetector:inst2.Switch4
+FastCLK => 7474:inst4.1CLK
+FastCLK => 7474:inst.1CLK
+FastCLK => 7474:inst.2CLK
+FastCLK => SwitchChangeDetector:inst2.FastCLK
+4SecondsTimer => NextStates:inst6.T_Reset
+LED2 <= LEDOutput:inst3.LED2
+LED3 <= LEDOutput:inst3.LED3
+LED4 <= LEDOutput:inst3.LED4
+A1 <= 7474:inst.1Q
+A2 <= 7474:inst.2Q
+A3 <= 7474:inst4.1Q
+
+
+|ProjectQuartus|LEDOutput:inst3
+LED1 <= 81MUXPZ:inst1.OUTPUT
+D3 => 81MUXPZ:inst1.S1
+D3 => 81MUXPZ:inst2.S1
+D3 => 81MUXPZ:inst3.S1
+D3 => 81MUXPZ:inst4.S1
+D2 => 81MUXPZ:inst1.S2
+D2 => 81MUXPZ:inst2.S2
+D2 => 81MUXPZ:inst3.S2
+D2 => 81MUXPZ:inst4.S2
+D1 => 81MUXPZ:inst1.S3
+D1 => 81MUXPZ:inst2.S3
+D1 => 81MUXPZ:inst3.S3
+D1 => 81MUXPZ:inst4.S3
+Switch1 => 81MUXPZ:inst1.I1
+Switch1 => 81MUXPZ:inst1.I2
+Switch1 => 81MUXPZ:inst1.I5
+Switch1 => 81MUXPZ:inst4.I3
+Switch1 => 81MUXPZ:inst4.I4
+Switch1 => 81MUXPZ:inst4.I6
+Switch4 => inst19.IN0
+Switch4 => inst31.IN1
+Switch4 => 81MUXPZ:inst1.I6
+Switch4 => inst.IN1
+Switch4 => 81MUXPZ:inst4.I1
+Switch4 => 81MUXPZ:inst4.I2
+Switch2 => inst19.IN1
+Switch2 => inst27.IN0
+Switch2 => 81MUXPZ:inst2.I1
+Switch2 => 81MUXPZ:inst2.I2
+Switch2 => inst28.IN0
+Switch2 => inst29.IN0
+Switch2 => 81MUXPZ:inst3.I5
+Switch2 => 81MUXPZ:inst3.I6
+Switch2 => 81MUXPZ:inst3.I7
+Switch3 => inst30.IN0
+Switch3 => 81MUXPZ:inst2.I3
+Switch3 => 81MUXPZ:inst2.I4
+Switch3 => inst26.IN1
+Switch3 => 81MUXPZ:inst2.I6
+Switch3 => 81MUXPZ:inst3.I1
+Switch3 => 81MUXPZ:inst3.I2
+Switch3 => inst29.IN1
+LED2 <= 81MUXPZ:inst2.OUTPUT
+LED3 <= 81MUXPZ:inst3.OUTPUT
+LED4 <= 81MUXPZ:inst4.OUTPUT
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst1
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst1|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst1|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst2
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst2|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst2|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst3
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst3|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst3|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst4
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst4|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|LEDOutput:inst3|81MUXPZ:inst4|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|7474:inst
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjectQuartus|NextStates:inst6
+A1 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+T_Reset => inst5.IN0
+T_Reset => inst19.IN0
+T_Reset => inst29.IN1
+T_Reset => inst34.IN0
+T_Reset => inst30.IN0
+T_Reset => inst20.IN1
+T_Reset => inst22.IN1
+I4 => inst12.IN0
+I4 => inst6.IN1
+I4 => inst36.IN0
+I4 => inst40.IN0
+I4 => inst31.IN0
+I2 => inst12.IN1
+I2 => inst2.IN0
+I2 => inst41.IN0
+I2 => inst39.IN1
+I2 => inst43.IN0
+I2 => inst47.IN0
+I2 => inst33.IN0
+I2 => inst21.IN0
+I3 => inst7.IN0
+I3 => inst11.IN0
+I3 => inst37.IN0
+I3 => inst16.IN0
+I3 => inst32.IN0
+I3 => inst24.IN0
+D2 => inst7.IN1
+D2 => 81MUXPZ:inst14.S2
+D2 => 81MUXPZ:inst1.S2
+D3 => inst11.IN1
+D3 => 81MUXPZ:inst14.S1
+D3 => 81MUXPZ:inst1.S1
+D1 => inst10.IN0
+D1 => 81MUXPZ:inst14.S3
+D1 => 81MUXPZ:inst1.S3
+I1 => inst27.IN0
+I1 => inst38.IN0
+I1 => inst13.IN1
+I1 => inst18.IN0
+I1 => inst23.IN0
+A3 <= 81MUXPZ:inst14.OUTPUT
+A2 <= 81MUXPZ:inst1.OUTPUT
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst14
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst14|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst14|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst1
+OUTPUT <= 21mux:inst17.Y
+S3 => 21mux:inst17.S
+I2 => 74153:inst.1C1
+I1 => 74153:inst.1C0
+I5 => 74153:inst.2C0
+I7 => 74153:inst.2C2
+I3 => 74153:inst.1C2
+I4 => 74153:inst.1C3
+S2 => 74153:inst.B
+S1 => 74153:inst.A
+I6 => 74153:inst.2C1
+I8 => 74153:inst.2C3
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst1|21mux:inst17
+Y <= 5.DB_MAX_OUTPUT_PORT_TYPE
+A => 6.IN0
+S => 6.IN1
+S => 7.IN1
+B => 8.IN0
+
+
+|ProjectQuartus|NextStates:inst6|81MUXPZ:inst1|74153:inst
+1Y <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1GN => 26.IN0
+B => 27.IN0
+A => 29.IN0
+1C0 => 1.IN3
+1C1 => 2.IN3
+1C2 => 3.IN3
+1C3 => 4.IN3
+2Y <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2C0 => 5.IN0
+2GN => 25.IN0
+2C1 => 6.IN0
+2C2 => 7.IN0
+2C3 => 8.IN0
+
+
+|ProjectQuartus|7474:inst4
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjectQuartus|SwitchChangeDetector:inst2
+Restart_T_Reset <= inst8.DB_MAX_OUTPUT_PORT_TYPE
+Switch4 => 7474:inst4.2D
+Switch4 => inst6.IN1
+FastCLK => 7474:inst4.1CLK
+FastCLK => 7474:inst4.2CLK
+FastCLK => 7474:inst.1CLK
+FastCLK => 7474:inst.2CLK
+Switch3 => 7474:inst4.1D
+Switch3 => inst5.IN0
+Switch2 => 7474:inst.2D
+Switch2 => inst2.IN1
+Switch1 => 7474:inst.1D
+Switch1 => inst1.IN0
+
+
+|ProjectQuartus|SwitchChangeDetector:inst2|7474:inst4
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ProjectQuartus|SwitchChangeDetector:inst2|7474:inst
+1Q <= 9.DB_MAX_OUTPUT_PORT_TYPE
+1CLRN => 9.ACLR
+1CLK => 9.CLK
+1D => 9.DATAIN
+1PRN => 9.PRESET
+1QN <= 16.DB_MAX_OUTPUT_PORT_TYPE
+2Q <= 10.DB_MAX_OUTPUT_PORT_TYPE
+2CLRN => 10.ACLR
+2CLK => 10.CLK
+2D => 10.DATAIN
+2PRN => 10.PRESET
+2QN <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+

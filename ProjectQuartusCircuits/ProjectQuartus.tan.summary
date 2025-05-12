@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.449 ns
+From           : Switch2
+To             : 7474:inst|10
+From Clock     : --
+To Clock       : FastCLK
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.095 ns
+From           : 7474:inst4|9
+To             : LED3
+From Clock     : FastCLK
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.741 ns
+From           : Switch1
+To             : LED4
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -4.782 ns
+From           : Switch2
+To             : 7474:inst4|9
+From Clock     : --
+To Clock       : FastCLK
+Failed Paths   : 0
+
+Type           : Clock Setup: 'FastCLK'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 383.14 MHz ( period = 2.610 ns )
+From           : 7474:inst4|9
+To             : 7474:inst|10
+From Clock     : FastCLK
+To Clock       : FastCLK
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

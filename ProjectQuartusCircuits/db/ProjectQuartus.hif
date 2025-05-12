@@ -1,0 +1,201 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+44
+3700
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+81MUXPZ
+# storage
+db|ProjectQuartus.(2).cnf
+db|ProjectQuartus.(2).cnf
+# case_insensitive
+# source_file
+81muxpz.bdf
+d89c22cf5657afab3838529e1530e261
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+LEDOutput:inst3|81MUXPZ:inst1
+LEDOutput:inst3|81MUXPZ:inst2
+LEDOutput:inst3|81MUXPZ:inst3
+LEDOutput:inst3|81MUXPZ:inst4
+NextStates:inst6|81MUXPZ:inst14
+NextStates:inst6|81MUXPZ:inst1
+}
+# macro_sequence
+
+# end
+# entity
+21mux
+# storage
+db|ProjectQuartus.(3).cnf
+db|ProjectQuartus.(3).cnf
+# case_insensitive
+# source_file
+d:|altera|quartus|libraries|others|maxplus2|21mux.bdf
+bccbea98b91436c0e11f107c4fbff16a
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+LEDOutput:inst3|81MUXPZ:inst1|21mux:inst17
+LEDOutput:inst3|81MUXPZ:inst2|21mux:inst17
+LEDOutput:inst3|81MUXPZ:inst3|21mux:inst17
+LEDOutput:inst3|81MUXPZ:inst4|21mux:inst17
+NextStates:inst6|81MUXPZ:inst14|21mux:inst17
+NextStates:inst6|81MUXPZ:inst1|21mux:inst17
+}
+# macro_sequence
+
+# end
+# entity
+74153
+# storage
+db|ProjectQuartus.(4).cnf
+db|ProjectQuartus.(4).cnf
+# case_insensitive
+# source_file
+d:|altera|quartus|libraries|others|maxplus2|74153.bdf
+282da062e85dbc28b5a89e8c71ef2a39
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+LEDOutput:inst3|81MUXPZ:inst1|74153:inst
+LEDOutput:inst3|81MUXPZ:inst2|74153:inst
+LEDOutput:inst3|81MUXPZ:inst3|74153:inst
+LEDOutput:inst3|81MUXPZ:inst4|74153:inst
+NextStates:inst6|81MUXPZ:inst14|74153:inst
+NextStates:inst6|81MUXPZ:inst1|74153:inst
+}
+# macro_sequence
+
+# end
+# entity
+SwitchChangeDetector
+# storage
+db|ProjectQuartus.(6).cnf
+db|ProjectQuartus.(6).cnf
+# case_insensitive
+# source_file
+switchchangedetector.bdf
+7924e3317a782e47c51db924ca9bca2
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+SwitchChangeDetector:inst2
+}
+# macro_sequence
+
+# end
+# entity
+7474
+# storage
+db|ProjectQuartus.(7).cnf
+db|ProjectQuartus.(7).cnf
+# case_insensitive
+# source_file
+d:|altera|quartus|libraries|others|maxplus2|7474.bdf
+a982f9dfb307a85efbd6af71d3adf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+7474:inst
+7474:inst4
+SwitchChangeDetector:inst2|7474:inst4
+SwitchChangeDetector:inst2|7474:inst
+}
+# macro_sequence
+
+# end
+# entity
+LEDOutput
+# storage
+db|ProjectQuartus.(1).cnf
+db|ProjectQuartus.(1).cnf
+# case_insensitive
+# source_file
+ledoutput.bdf
+df3d65aae92c7d7c59c83d29933811ed
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+LEDOutput:inst3
+}
+# macro_sequence
+
+# end
+# entity
+NextStates
+# storage
+db|ProjectQuartus.(5).cnf
+db|ProjectQuartus.(5).cnf
+# case_insensitive
+# source_file
+nextstates.bdf
+2adf1f15a62de955f7adef3fbe78fdf
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+NextStates:inst6
+}
+# macro_sequence
+
+# end
+# entity
+ProjectQuartus
+# storage
+db|ProjectQuartus.(0).cnf
+db|ProjectQuartus.(0).cnf
+# case_insensitive
+# source_file
+projectquartus.bdf
+1e9564d053c837312f733eeea64b930
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
